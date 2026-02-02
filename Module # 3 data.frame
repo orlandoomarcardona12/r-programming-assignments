@@ -1,0 +1,19 @@
+Module # 3 data.frame
+
+#I was not sure what the assignment was asking me to do beyond putting in the 3 lines of code and explaining what we saw, so I decided to assume we needed to create a dataframe.
+#It created 3 vectors that can now be combined to make a data frame.
+#I turned it into a data frame with this
+Name <- c("Jeb", "Donald", "Ted", "Marco", "Carly", "Hillary", "Bernie")
+
+ABC_political_poll_results <- c(4, 62, 51, 21, 2, 14, 15)
+
+CBS_political_poll_results <- c(12, 75, 43, 19, 1, 21, 19)
+
+poll_results <- data.frame(
+  Name,
+  ABC_political_poll_results,
+  CBS_political_poll_results
+)
+
+poll_results
+#This assignment really shows how easy it is to make data frames with R.
