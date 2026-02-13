@@ -1,0 +1,12 @@
+#This was a very straightforward chapter this week, but I did need to learn some basic linear algebra to really understand what was happening(3Blue1Brown for the win lol).
+
+
+A <- matrix(1:100, nrow=10)  
+B <- matrix(1:1000, nrow=10)
+det(A)
+det(B)
+solve(A)
+
+
+#The det() function computes the determinant of a matrix, which is essentially the linear transformation a matrix performs on an area. The solve() function gets the inverse, which is basically a separate matrix that reverses the changes of the original matrix. 
+#The first matrix, A, was a 10 x 10 matrix with a determinant of 0, meaning that it collapses into a lower dimension, or a line in this case. If the determinant is 0, that means there is no inverse. The second matrix, B, was 10 x 100, so it has no determinant because it is not a square matrix. Thus, it also does not have an inverse.
