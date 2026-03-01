@@ -1,0 +1,23 @@
+#S4
+setClass(
+  "SalaryDataset",
+  slots = list(
+    YearsExperience = "numeric",
+    Age = "numeric",
+    Salary = "integer"
+  )
+)
+salaryS4 <- new(
+  "SalaryDataset",
+  YearsExperience = salaryData$YearsExperience,
+  Age = salaryData$Age,
+  Salary = salaryData$Salary
+)
+#S3
+player <- list(
+  name = "DeAndre Jackson",
+  position = "Wide Receiver",
+  team = "Chargers",
+  touchdowns = 12
+)
+class(player) <- "footballPlayer"
